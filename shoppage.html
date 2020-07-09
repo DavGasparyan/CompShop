@@ -1,47 +1,50 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title>Shopping Page</title>
-    </head>
-    <body>
-      <nav class="first-navbar navbar-light bg-primary">
-      <div class="row">
-        <div class="col-md-3 d-none d-lg-block">
-          Telephone: +374-77-33-52-20
-        </div>
-        <div class="col-md-3 d-none d-lg-block">
-          Adress: Armenia, Erevan, Tumo
-        </div>
-        <div class="col col-lg-2 col-6">
-          <form>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+  <title>Shopping Page</title>
+</head>
+
+<body>
+  <nav class="first-navbar navbar-light bg-primary">
+    <div class="row">
+      <div class="col-md-3 d-none d-lg-block">
+        Telephone: +374-77-33-52-20
+      </div>
+      <div class="col-md-3 d-none d-lg-block">
+        Adress: Armenia, Erevan, Tumo
+      </div>
+      <div class="col col-lg-2 col-6">
+        <form>
           <select id="inputState" class="form-control">
             <option selected>ENG</option>
             <option>RUS</option>
             <option>RUS</option>
           </select>
-        </div>
-        <div class="col col-lg-2 col-6">
-          <select id="inputState" class="form-control">
-            <option selected>$</option>
-            <option>֏</option>
-            <option>₽</option>
-          </select>
-        </div>
-      </form>
-        <div class="col mr-4 col-md-1 ml-auto d-none d-lg-flex justify-content-end">
-          <button type="button" class="btn btn-warning">
-            Notifiction <span class="badge badge-danger">3</span>
-          </button>
-        </div>
       </div>
+      <div class="col col-lg-2 col-6">
+        <select id="inputState" class="form-control">
+          <option selected>$</option>
+          <option>֏</option>
+          <option>₽</option>
+        </select>
+      </div>
+      </form>
+      <div class="col mr-4 col-md-1 ml-auto d-none d-lg-flex justify-content-end">
+        <a href="myorders.html" type="button" class="btn btn-warning">
+          Card <span class="badge badge-danger">3</span>
+        </a>
+      </div>
+    </div>
     </div>
   </nav>
   <nav class="navbar navbar-light bg-info justify-content-between">
@@ -50,14 +53,15 @@
       <input class="d-md-block d-none form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="d-md-block d-none btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
       <div class="dropdown">
-        <button class="account-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="account-button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           My Account
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="# " data-toggle="modal" data-target="#LoginModal">Log In</a>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#RegisterModal">Register</a>
-          <a class="dropdown-item" href="#">My Orders</a>
-          <a class="dropdown-item" href="#">Account Settings</a>
+          <a class="dropdown-item" href="myorders.html">My Orders</a>
+          <a class="dropdown-item" href="accountsettings.html">Account Settings</a>
 
         </div>
       </div>
@@ -73,372 +77,506 @@
     </ol>
   </nav>
 
-    <div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  Select CPU
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">I5 9600K</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">I7 8700K</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3">
+                  <label class="form-check-label" for="inlineRadio3">I7 9700K</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Select GPU
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4"
+                    value="option4">
+                  <label class="form-check-label" for="inlineRadio4">GTX 1660Ti</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio5"
+                    value="option5">
+                  <label class="form-check-label" for="inlineRadio5">RTX 2060</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio6"
+                    value="option6">
+                  <label class="form-check-label" for="inlineRadio6">RTX 2070</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Select RAM
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio7"
+                    value="option7">
+                  <label class="form-check-label" for="inlineRadio7">8GB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio8"
+                    value="option8">
+                  <label class="form-check-label" for="inlineRadio8">16GB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio9"
+                    value="option9">
+                  <label class="form-check-label" for="inlineRadio9">32GB</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Select Case
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio13"
+                    value="option13">
+                  <label class="form-check-label" for="inlineRadio13">Aerocool Rift</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio14"
+                    value="option14">
+                  <label class="form-check-label" for="inlineRadio14">Aerocool Cylon</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio15"
+                    value="option15">
+                  <label class="form-check-label" for="inlineRadio15">Aerocool Bolt</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  Select HDD
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio10"
+                    value="option10">
+                  <label class="form-check-label" for="inlineRadio10">1 TB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio11"
+                    value="option11">
+                  <label class="form-check-label" for="inlineRadio11">2 TB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio12"
+                    value="option12">
+                  <label class="form-check-label" for="inlineRadio12">4 TB</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+                  aria-expanded="false" aria-controls="collapseSix">
+                  Select SSD
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio16"
+                    value="option16">
+                  <label class="form-check-label" for="inlineRadio16">240GB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio17"
+                    value="option17">
+                  <label class="form-check-label" for="inlineRadio17">480GB</label>
+                </div>
+                <div class="form-check form-check-inline d-block">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio18"
+                    value="option18">
+                  <label class="form-check-label" for="inlineRadio18">1TB</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+
+        <div class="row">
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light border col-md-12 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-md-2"><a href="product.html"><img class="img-fluid"
+                    src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a>
+              </div>
+              <div class="col-md-8"><a href="product.html">
+                  <h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and
+                    1TB HDD)</h6>
+                </a>
+                <ul class="d-md-block d-none">
+                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
+                  <li>16GB DDR4 | 480GB SSD</li>
+                  <li>27" 2560x1440 QHD Display</li>
+                  <li>Razer Gaming Mouse and Keyboard</li>
+                </ul>
+              </div>
+              <div class="col-md-2 mt-4">
+                <h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <footer class="bg-dark gpage-footer font-small blue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+
       <div class="row">
-        <div class="col-md-3 d-none d-md-block"><div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Select CPU
-        </button>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Select GPU
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Select RAM
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Select Case
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingFive">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          Select Power Supply
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingSix">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          Select HDD/SSD
-        </button>
-      </h2>
-    </div>
-    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-        <a class="d-md-block" href="#">Some Text</a>
-      </div>
-    </div>
-  </div>
-</div></div>
-        <div class="col-md-9">
 
-          <div class="row">
-            <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-             <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-             <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-             <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-             <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-             <div class="bg-light border col-md-12 col-sm-6 col-12">
-              <div class="row">
-                <div class="col-md-2"><a href="product.html"><img class="img-fluid" src="https://i2.wp.com/thenerdweb.com/wp-content/uploads/2017/09/tower-gaming-main-img_new-min.png?fit=820%2C520"></a></div>
-                <div class="col-md-8"><a href="product.html"><h6 class="text-primary">27" LED Display , Gaming Mouse and Keyboard, (Core i7, 16GB RAM,480GB SSD and 1TB HDD)</h6></a> 
-                  <ul class="d-md-block d-none">
-                  <li>2.9GHz Core i7-9700K 6/12 Turbo Boost 4.2Ghz</li>
-                  <li>16GB DDR4 | 480GB SSD</li>
-                  <li>27" 2560x1440 QHD Display</li>
-                  <li>Razer Gaming Mouse and Keyboard</li>
-                </ul> 
-              </div>
-                <div class="col-md-2 mt-4"><h2>1000$</h2> <a class="btn btn-primary btn-block">Add To Card</a></div>
-              </div>  
-            </div>
-        </div>
-        </div>    
-      </div>
-    </div> 
-    <br>
-    <footer class="bg-dark gpage-footer font-small blue pt-4">
+        <div class="col-md-6 mt-md-0 mt-3">
 
-        <div class="container-fluid text-center text-md-left">
-
-          <div class="row">
-
-            <div class="col-md-6 mt-md-0 mt-3">
-
-              <h6 class="text-light text-uppercase">Find Us</h6>
-              <p class="text-light">16 Halabyan St, Yerevan 0038, Armenia</p>
-              <hr>
-              <h6 class="text-light text-uppercase">Call Us</h6>
-              <p class="text-light">+(374) 77-33-52-20</p>
-              <p class="text-light">+(374) 10-33-52-20</p>
-
-            </div>
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <div class="col-md-3 mb-md-0 mb-3">
-
-              <h5 class="text-light text-uppercase">Social</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://facebook.com">FaceBook</a>
-                </li>
-                <li>
-                  <a href="https://youtube.com">YouTube</a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://instagram.com">Instagram</a>
-                </li>
-              </ul>
-
-            </div>
-
-            <div class="col-md-3 mb-md-0 mb-3">
-
-              <h5 class="text-light text-uppercase">Links</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Some Link</a>
-                </li>
-                <li>
-                  <a href="#!">Some Link</a>
-                </li>
-                <li>
-                  <a href="#!">Some Link</a>
-                </li>
-                <li>
-                  <a href="#!">Some Link</a>
-                </li>
-              </ul>
-
-            </div>
-
-          </div>
+          <h6 class="text-light text-uppercase">Find Us</h6>
+          <p class="text-light">16 Halabyan St, Yerevan 0038, Armenia</p>
+          <hr>
+          <h6 class="text-light text-uppercase">Call Us</h6>
+          <p class="text-light">+(374) 77-33-52-20</p>
+          <p class="text-light">+(374) 10-33-52-20</p>
 
         </div>
 
-        <div class="bg-secondary text-light footer-copyright text-center py-3">© 2020 Copyright:
-          <a class="text-info" href="https://tumo.org/">Tumo.org</a>
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <h5 class="text-light text-uppercase">Social</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://facebook.com">FaceBook</a>
+            </li>
+            <li>
+              <a href="https://youtube.com">YouTube</a>
+            </li>
+            <li>
+              <a href="https://twitter.com">Twitter</a>
+            </li>
+            <li>
+              <a href="https://instagram.com">Instagram</a>
+            </li>
+          </ul>
+
         </div>
 
-      </footer>
-      <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="LoginModalLabel">Log In</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="LoginInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="LoginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="LoginInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="LoginInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary">Log In</button>
-              </form>
-            </div>
+        <div class="col-md-3 mb-md-0 mb-3">
 
-          </div>
+          <h5 class="text-light text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Some Link</a>
+            </li>
+            <li>
+              <a href="#!">Some Link</a>
+            </li>
+            <li>
+              <a href="#!">Some Link</a>
+            </li>
+            <li>
+              <a href="#!">Some Link</a>
+            </li>
+          </ul>
+
         </div>
+
       </div>
-      <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="RegisterModalLabel">Log In</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+
+    </div>
+
+    <div class="bg-secondary text-light footer-copyright text-center py-3">© 2020 Copyright:
+      <a class="text-info" href="https://tumo.org/">Tumo.org</a>
+    </div>
+
+  </footer>
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="LoginInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="LoginInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="RegisterInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="RegisterInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="RegisterInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="RegisterInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                  <label for="RegisterInputPassword1">Confirm Password</label>
-                  <input type="password" class="form-control" id="RegisterInputPassword1" placeholder="Confirm Password">
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                    <div class="col-sm-10">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                        <label class="form-check-label" for="gridRadios1">
-                          Male
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                          Female
-                        </label>
-                      </div>
-                    </div>
+            <div class="form-group">
+              <label for="LoginInputPassword1">Password</label>
+              <input type="password" class="form-control" id="LoginInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="RegisterModalLabel">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="RegisterInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="RegisterInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="RegisterInputPassword1">Password</label>
+              <input type="password" class="form-control" id="RegisterInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="RegisterInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="RegisterInputPassword1" placeholder="Confirm Password">
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                      checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Male
+                    </label>
                   </div>
-                  <div class="form-row form-group">
-                    <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Country</label>
-                      <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <label for="validationDefault04">City</label>
-                      <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <label for="validationDefault05">Zip</label>
-                      <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                      <label class="form-check-label" for="invalidCheck2">
-                        Agree to terms and conditions
-                      </label>
-                    </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Female
+                    </label>
                   </div>
                 </div>
-              </fieldset>
-              <button type="submit" class="btn btn-primary">Register</button>
-            </form>
-          </div>
-
+              </div>
+              <div class="form-row form-group">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault03">Country</label>
+                  <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault04">City</label>
+                  <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault05">Zip</label>
+                  <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                  </label>
+                </div>
+              </div>
+            </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
         </div>
+
       </div>
     </div>
+  </div>
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
-  </html>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
