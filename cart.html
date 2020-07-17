@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
-  <title>Home Page</title>
+  <title>Orders Page</title>
 </head>
 
 <body>
@@ -47,8 +48,8 @@
         </a>
       </div>
       <div class="col col-md-1 ml-auto d-none d-lg-flex justify-content-end">
-        <a href="cart.html" type="button" class="btn btn-warning">
-          Cart <span class="badge badge-danger">3</span>
+        <a href="myorders.html" type="button" class="btn btn-warning">
+          Card <span class="badge badge-danger">3</span>
         </a>
       </div>
     </div>
@@ -168,219 +169,54 @@
       </div>
     </nav>
   </div>
-
-  <div id="MainCarousel" class="d-none d-lg-block carousel  slide" data-ride="carousel" data-interval="3000">
-    <ol class="carousel-indicators">
-      <li data-target="#MainCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#MainCarousel" data-slide-to="1"></li>
-      <li data-target="#MainCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active carousel-div">
-
-        <div class="row justify-content-center bg-warning carousel-div">
-          <div class="col-4 mt-4">
-            <a href="#"><img class="w-100"
-                src="https://static.techspot.com/images2/news/bigimage/2017/01/2017-01-06-image.png"></a>
-          </div>
-          <div class="col-4 mt-4">
-            <h1 class="text-light">Gaming Monitor</h1>
-            <hr>
-            <h4 class="text-light">Super Gaming Monitor <br>4K Resoultation<br>240hz Refresh Frequency<br>32" Display
-              <br> Frameless and more</h4>
-
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item carousel-div">
-        <div class="carousel-div row justify-content-center bg-danger">
-          <div class="col-4 mt-4">
-            <h1 class="text-light">MSI Gaming KeyBoard</h1>
-            <hr>
-            <h4 class="text-light">Beautyful Gaming Keyboard <br>Mechanical Switches<br>LED RGB BackLight<br>Without
-              NumPad<br>Metal Carcass</h4>
-          </div>
-          <div class="col-4 mt-4">
-            <a href="#"><img class="w-100"
-                src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"></a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row justify-content-center bg-success carousel-div">
-          <div class="col-4 mt-4">
-            <a href="#"><img class="w-100"
-                src="https://www.seekpng.com/png/full/8-83189_gaming-laptop-png-image-library-stock-fangbook-4.png"></a>
-          </div>
-          <div class="col-4 mt-4">
-            <h1 class="text-light">Gaming Laptop</h1>
-            <hr>
-            <h4 class="text-light">Gaming Laptop Fangbook<br>2K display<br>144hz Refresh Frequency<br>RTX 2060 S<br>i7
-              10700K<br>Rgb Keyboard and more</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Main Content -->
   <div class="container-fluid">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Register</strong> To Buy Something on This Site
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="row justify-content-center">
-      <div class="d-flex justify-content-center h1 m-3 col-12">Most Frequently Bought</div>
-      <div class="ml-auto mr-auto card col-lg-4 m-3 d-lg-block d-none">
-        <a href="#"><img style="max-height: 345px;" class="image-fluid card-img-top"
-            src="https://andpro.ru/upload/iblock/4d5/5ed908ef_4404_11ea_8108_001e67d1aaeb_9f9e71dc_4404_11ea_8108_001e67d1aaeb.png"
-            alt="Card image cap"></a>
-        <div class="card-body">
-          <h5 class="card-title">Nvidia Geforce GTX 1660S</h5>
-          <p class="card-text">Nvidia Gaming VideoCard 1660S , GDDR6 6Gb by MSI</p>
-          <a href="#" class="btn btn-primary">More Information</a>
-        </div>
-      </div>
-      <div class="ml-auto mr-auto card col-lg-4 col-md-6 m-3">
-        <a href="#"><img style="max-height: 345px;" class="image-fluid card-img-top"
-            src="https://redtech.lk/wp-content/uploads/2019/03/RRR.png" alt="Card image cap"></a>
-        <div class="card-body">
-          <h5 class="card-title">Intel Core I5 9400F</h5>
-          <p class="card-text">6 Core Processor by Intel . 2.90Ghz , Turbo Boost 4.1Ghz</p>
-          <a href="#" class="btn btn-primary">More Information</a>
-        </div>
-      </div>
-      <div class="ml-auto mr-auto card col-lg-4 col-md-6 m-3">
-        <a href="#"><img style="max-height: 345px;" class="image-fluid card-img-top"
-            src="https://images-na.ssl-images-amazon.com/images/I/613IgMpC42L._AC_SX466_.jpg" alt="Card image cap"></a>
-        <div class="card-body">
-          <h5 class="card-title">PICTEK Gaming Mouse with Mouse Pad</h5>
-          <p class="card-text">Programmable 7 Buttons, Ergonomic Design with RGB</p>
-          <a href="#" class="btn btn-primary">More Information</a>
-        </div>
-      </div>
+    <h2 class="text-dark text-center">Cart</h2>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">/</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="mr-3 d-sm-inline-block d-none" width="55"
+              src="https://static.techspot.com/images2/news/bigimage/2017/01/2017-01-06-image.png">240Hz Super Gaming
+            Monitor</td>
+          <td>499.00$</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><img class="mr-3 d-sm-inline-block d-none" width="55"
+              src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png">RGB
+            Gaming KeyBoard by MSI</td>
+          <td>159.00$</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><img class="mr-3 d-sm-inline-block d-none" width="55"
+              src="https://images-na.ssl-images-amazon.com/images/I/613IgMpC42L._AC_SX466_.jpg">PICTEK Gaming Mouse</td>
+          <td>79.00$</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td><a class="btn btn-success" href="index.html">Continue Shopping</a></td>
+          <td><strong>737.00$</strong></td>
+          <td><a class="btn btn-success" href="chekout.html">Process To Chekout</a></td>
+        </tr>
+      </tbody>
+    </table>
 
 
+    <h1 class="text-dark text-center">Recent View</h1>
+    <div class="row">
 
-    </div>
-    <hr class="content-hr">
-    <div id="carouselExampleControls" class="carousel slide my-4" data-ride="carousel" data-interval="0">
-      <div style="height: 300px" class="carousel-inner d-sm-block d-none">
-        <div class="carousel-item active">
-          <h3 class="text-dark text-center">Keyboards</h3>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 d-md-block d-none">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <h3 class="text-dark text-center">Mouses</h3>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 d-md-block d-none">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <h3 class="text-dark text-center">Mouse Pads</h3>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-            <div class="col-lg-3 d-md-block d-none">
-              <div class="ml-auto mr-auto card">
-                <a href="#"><img style="height: 250px;" class="card-img-top"
-                    src="https://storage-asset.msi.com/global/picture/image/feature/multimeda/keyboard/GK70/GK70-keyboard.png"
-                    alt="Card image cap"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a style="width: 50px;" class="bg-dark carousel-control-prev" href="#carouselExampleControls" role="button"
-        data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a style="width: 50px;" class="bg-dark carousel-control-next" href="#carouselExampleControls" role="button"
-        data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <h2 class="text-dark text-center">Ready Buided PC</h2>
-    <div class="row my-4">
       <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
         <div class="card">
           <a href="#"><img class="card-img-top"
@@ -391,7 +227,7 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
@@ -405,7 +241,7 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
@@ -419,7 +255,7 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
@@ -433,7 +269,7 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
@@ -447,7 +283,7 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
@@ -461,28 +297,13 @@
             <p class="card-text">Intel Core I7 9700K<br>Nvidia RTX 2070Super<br>16Gb Ram DDR4 3200Mhz<br>Z390 Chipset
             <h5 class="text-center text-dark">1599.00$</h5>
             </p>
-            <a href="cart.html" class="btn btn-primary btn-block">Add To Cart</a>
+            <a href="#" class="btn btn-primary btn-block">Add To Card</a>
           </div>
         </div>
       </div>
     </div>
-    <nav aria-label="...">
-      <ul class="d-flex justify-content-center pagination m-3">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1">Previous</a>
-        </li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
   </div>
-  <!-- Footer -->
+  </div>
   <footer class="bg-dark gpage-footer font-small blue pt-4">
 
     <div class="container-fluid text-center text-md-left">
